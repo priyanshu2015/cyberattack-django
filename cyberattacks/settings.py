@@ -35,7 +35,7 @@ DEBUG = env('DEBUG')
 
 ALLOWED_HOSTS = ['*']
 
-SESSION_COOKIE_DOMAIN = ".herokuapp.com"
+# SESSION_COOKIE_DOMAIN = ".herokuapp.com"
 
 # Application definition
 
