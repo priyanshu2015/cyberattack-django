@@ -11,7 +11,7 @@ def index(request):
     arr = request.get_host().split(':')[0].split('.')
     # if we are at subdomain page right now
     # we should delete subdomain using:
-    # arr.pop(0)
+    arr.pop(0)
     domain = ".".join(arr)
     response = render(request, 'firstcyberattacksapp/index.html')
     response.set_cookie('city', 'haridwar', domain="."+domain)
