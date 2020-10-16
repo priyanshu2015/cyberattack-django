@@ -13,6 +13,9 @@ def index(request):
     # return render(request, 'firstcyberattacksapp/index.html')# , context=context)
     return response
 
+def reflectedcsrf(request):
+    return render(request, 'firstcyberattackapp/reflectedcsrf.html')
+
 
 
 
