@@ -16,6 +16,9 @@ def index(request):
 def reflectedcsrf(request):
     return render(request, 'firstcyberattacksapp/reflectedcsrf.html')
 
+def reflectedcsrflogin(request):
+    return render(request, 'firstcyberattacksapp/reflectedcsrflogin.html')
+
 
 
 
