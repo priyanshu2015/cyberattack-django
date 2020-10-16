@@ -4,5 +4,6 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name = 'home'),
+    path('reflectedcsrf/', views.reflectedcsrf, name = 'reflectedcsrf'),
 ]
 
