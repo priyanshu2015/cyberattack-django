@@ -32,7 +32,7 @@ SECRET_KEY = 'igxl*+5u^&$st09%apuq6c1@=74_8f!6q!&ywz$dtu6ptyo)(!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG')
-
+#DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 # SESSION_COOKIE_DOMAIN = ".herokuapp.com"
